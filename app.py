@@ -18,6 +18,7 @@ def index(path):
     return render_template("index.html")
 
 
+
 @app.route('/upload', methods=['POST'])
 def upload():
     for fname in request.files:
