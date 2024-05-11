@@ -18,11 +18,11 @@ def index(path):
     return render_template("index.html")
 
 
-
 @app.route('/upload', methods=['POST'])
 def upload():
     for fname in request.files:
         f = request.files.get(fname)
+        print("Устрани меня")
         # image_stream = io.BytesIO(f.stream.read())
         # img = cv.imdecode(np.frombuffer(image_stream.read()), cv.IMREAD_COLOR)
         #
