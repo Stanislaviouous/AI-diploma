@@ -22,7 +22,7 @@ def index(path):
 def upload():
     for fname in request.files:
         f = request.files.get(fname)
-        print("Устрани меня")
+        print("Устрани меня пж")
         # image_stream = io.BytesIO(f.stream.read())
         # img = cv.imdecode(np.frombuffer(image_stream.read()), cv.IMREAD_COLOR)
         #
