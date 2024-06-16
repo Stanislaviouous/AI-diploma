@@ -15,6 +15,7 @@ cors.init_app(app, resource={r"/api/*": {"origins": "*"}})
 @app.route("/", defaults={"path": ""})
 @app.route("/<path:path>")
 def index(path):
+    print(2)
     return render_template("index.html")
 
 
